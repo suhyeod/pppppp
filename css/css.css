@@ -128,30 +128,30 @@ table {
 body {
     height: 3000px;
 }
-.top{
+.top {
     height: 43px;
     background-color: black;
     color: white;
     display: grid;
     place-items: center;
 }
-.container{
+.container {
     font-size: 13px;
 }
 
 /*==========mobile_header===========*/
-#mobile_header > div:nth-child(1){
-    padding: 8px 15px 0px;
+#mobile_header > div:nth-child(1) {
+    padding: 8px 15px 0;
     display: flex;
     justify-content: space-between;
 }
-#line_0{
+#line_0 {
     display: grid;
     gap: 8px;
     width: 24px;
     height: 15px;
 }
-.line{
+.line {
     width: 100%;
     height: 0.99px;
     background-color: black;
@@ -167,7 +167,7 @@ body {
 #mobile_header > div > div:nth-child(3) > ul {
     display: flex;
 }
-#mobile_header > div > div:nth-child(3) > ul > li  > img{
+#mobile_header > div > div:nth-child(3) > ul > li > img {
     width: 24px;
     margin-left: 8px;
 }
@@ -178,19 +178,19 @@ body {
     background-color: #f9f9f9;
     border: 0;
     font-size: 14px;
-    background-image: url("./이미지/search_FILL0_wght300_GRAD0_opsz48.png");
+    background-image: url("/img/search_FILL0_wght300_GRAD0_opsz48.png");
     background-repeat: no-repeat;
     background-size: 34px;
-    margin: 0px 0px 10px 30px;
-    padding: 0px 0px 0px 34px;
+    margin: 0 0 10px 30px;
+    padding: 0 0 0 34px;
 }
 /*==========pc_header===============*/
 #pc_header > div:nth-child(2) {
-    padding: 25px 20px 0px;
+    padding: 25px 20px 0;
     display: flex;
     justify-content: space-between;
 }
-#pc_header > div > div{
+#pc_header > div > div {
     display: flex;
 }
 
@@ -198,7 +198,7 @@ body {
     display: flex;
 }
 
-#pc_header > div > div > ul > li > img{
+#pc_header > div > div > ul > li > img {
     width: 20px;
     height: 20px;
 }
@@ -211,10 +211,10 @@ body {
     position: relative;
     left: 35px;
 }
-#pc_header > div > div:last-child > ul > li > img{
+#pc_header > div > div:last-child > ul > li > img {
     margin-top: 8px;
 }
-#pc_header > div > div:last-child > ul > li:nth-child(1) > img{
+#pc_header > div > div:last-child > ul > li:nth-child(1) > img {
     height: 20px;
     border-right: solid 1px;
 }
@@ -236,7 +236,7 @@ body {
     background-image: url("/img/search_FILL0_wght300_GRAD0_opsz48.png");
     background-repeat: no-repeat;
     background-size: 34px;
-    padding: 0px 0px 0px 34px;
+    padding: 0 0 0 34px;
 }
 
 /*=======nav==========*/
@@ -246,62 +246,67 @@ nav > ul {
     display: flex;
     justify-content: space-around;
     font-size: 16px;
-    padding: 0px 20px 0px 20px;
+    padding: 0 20px;
 }
-nav > ul >li:hover {
+nav > ul > li:hover {
     border-bottom: 1px solid black;
-    padding: 0px 0px 4px;
+    padding: 0 0 4px;
 }
 /*=========pc_main=============*/
 #pc_main {
-    margin: 30px 117px;
+    margin: 0px 30px 0px 30px;
 }
-#pc_main > div > div {
+.t_line_0  {
     display: flex;
+}
+.img_1{
+    margin-top: 30px;
 }
 .img_1 > img {
     width: 100%;
 }
-#pc_main > div:nth-child(2){
-    margin-top: 150px;
-    font-size: 24px;
-    font-weight: 400;
-}
+
 .t_line_0 {
     justify-content: center;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 150px;
+
 }
 .t_line {
     width: 40px;
     height: 0.99px;
     background-color: black;
-    margin: 13px 12px;
+    margin: 9px 12px;
 }
-.img_2 {
-    justify-content: space-around;
+.img_2 > ul > li {
+    justify-content: space-between;
     font-size: 12px;
 }
 
+.img_2  > ul {
+    display: flex;
+    justify-content: space-around;
+}
 
-.img_3 > div {
+.img_3 > div , .img_5 > div {
     margin-bottom: 8px;
 }
-.img_3 > span {
+.img_3 > span , .img_5 > span {
     color: #767677;
     font-weight: bold;
 }
-.img_3{
+.img_3 , .img_5 {
     margin-top: 100px;
-    width: 300px;
-    height: 300px;
     text-align: center;
 }
 
-.img_3 > img {
+.img_3 > img , .img_5 >img{
     width: 219px;
-    height: 219px;    
+    height: 219px;
 }
 
-.img_3 > button {
+.ADD{
     width: 140px;
     height: 30px;
     border: 0;
@@ -311,20 +316,98 @@ nav > ul >li:hover {
     font-weight: bold;
     margin-top: 8px;
 }
-.img_3 > button:hover{
+.ADD:hover {
     background-color: white;
     color: black;
 }
+/*=========슬라이드===========*/
+
+.img_4 {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin-top: 50px;
+    margin: 0px 100px;
+    overflow: hidden;
+    /*리스트 형식으로 이미지를 일렬로 
+    정렬할 것이기 때문에, 500px 밖으로 튀어 나간 이미지들은
+    hidden으로 숨겨줘야됨*/
+}
+
+.img_4 > ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2500px;
+    /* 슬라이드할 사진과 마진 총 넓이 */
+    transition: left 1s ease-out;
+    /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
+}
+
+/* 첫 번째 슬라이드 가운데에 정렬하기위해
+첫번째 슬라이드만 margin-left조정 */
+.img_4 > ul  > li:first-child {
+    margin-left: 0px;
+}
+
+/* 슬라이드들 옆으로 정렬 */
+.img_4 > ul > li:not(:last-child) {
+    float: left;
+    margin-right: 0px;
+}
+
+.img_5 {
+    float: left;
+    padding: 0px 40px;
+}
+
+.controller > span {
+    position: absolute;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 20px;
+    top: 50%;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+/* 이전, 다음 화살표에 마우스 커서가 올라가 있을때 */
+.controller > span:hover {
+    background-color: rgba(128, 128, 128, 0.11);
+}
 
 
+.prev {
+    left: 10px;
+}
 
-@media (min-width : 750px){
+/* 이전 화살표에 마우스 커서가 올라가 있을때 
+  이전 화살표가 살짝 왼쪽으로 이동하는 효과*/
+.prev:hover {
+    transform: translateX(-10px);
+}
+
+.next {
+    right: 10px;
+
+}
+
+/* 다음 화살표에 마우스 커서가 올라가 있을때 
+  이전 화살표가 살짝 오른쪽으로 이동하는 효과*/
+.next:hover {
+    transform: translateX(10px);
+}
+
+/*====================슬라이드 끝===========*/
+@media (min-width : 750px) {
     #mobile {
         display: none;
     }
 }
-@media(max-width : 750px){
-    #pc { 
+@media(max-width : 750px) {
+    #pc {
         display: none;
     }
 }
